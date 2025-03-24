@@ -27,9 +27,6 @@ Môn học ReactJS cung cấp cho sinh viên kiến thức và kỹ năng cần 
 - Kiến thức cơ bản về JavaScript và HTML/CSS.
 - Cài đặt Node.js và npm trên máy tính cá nhân.
 
-## Liên Hệ
-Nếu bạn có bất kỳ câu hỏi nào về khóa học, hãy liên hệ với giảng viên qua email hoặc trong giờ làm việc.
-
 ---
 
 **Chúc các bạn học tốt và có những trải nghiệm thú vị với ReactJS!**
