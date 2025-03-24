@@ -1,0 +1,114 @@
+.body {
+    position: relative;
+    height: 100%;
+    padding: 388px 125px 0px;
+}
+
+.info-name {
+    position: absolute; 
+    top: 55px; 
+    left: 146px; 
+    font-family: Lora; 
+    font-size: 32px; 
+    line-height: 48px; 
+    font-weight: 700; 
+    color: #171A1FFF; /* neutral-900 */
+}
+
+.info-des {
+    position: absolute; 
+    top: 145px; 
+    left: 348px; 
+    width: 974px; 
+    font-family: Poppins; /* Heading */
+    font-size: 16px; 
+    line-height: 26px; 
+    font-weight: 400; 
+    color: #424955FF; /* neutral-650 */
+}
+
+/* Avatar 42 */
+.body .avatar {
+    position: absolute; 
+    top: 143px; 
+    left: 146px; 
+    width: 164px; 
+    height: 164px; 
+    background: #FBC8DAFF; /* primary-200 */
+    opacity: 1; 
+    overflow: hidden; 
+    border-radius: 82px; 
+}
+
+.body .avatar img {
+    width: 164px; 
+    height: 164px; 
+}
+
+.info-like {
+    position: absolute; 
+    top: 255px; 
+    left: 348px; 
+    font-family: Manrope; /* Body */
+    font-size: 16px; 
+    line-height: 26px; 
+    font-weight: 400; 
+    color: #F44B87FF; /* primary-500 */
+  }
+
+/* Button 88 */
+.info-share {
+    position: absolute; 
+    top: 263px; 
+    left: 497px; 
+    height: 44px; 
+    padding: 0 16px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    font-family: Manrope; 
+    font-size: 16px; 
+    line-height: 26px; 
+    font-weight: 400; 
+    color: #FFFFFFFF; /* white */
+    background: #F44B87FF; /* primary-500 */
+    opacity: 1; 
+    border: none; 
+    border-radius: 12px; /* border-xl */
+    gap: 6px; 
+}
+
+.body ul{
+    display: flex;
+    position: absolute;
+    top: 330px;
+    left: 92px;
+}
+
+.body ul li{
+    font-size: 14px; 
+    line-height: 22px; 
+    font-weight: 400; 
+    color: #565E6CFF;
+    list-style: none;
+    line-height: 1.5;
+    padding: 10px;
+}
+
+.body ul li:nth-child(1){
+    color: #B30B46FF;
+    background: #FBC8DAFF;
+    border-radius: 12px 12px 0px 0px;
+}
+
+.line {
+    position: absolute; 
+    top: 386px; 
+    left: 132px; 
+    width: 1176px; 
+    height: 0px; 
+    border-width: 1px; 
+    border-color: #DEE1E6FF; /* neutral-300 */
+    border-style: solid; 
+    transform: rotate(0deg); 
+}
