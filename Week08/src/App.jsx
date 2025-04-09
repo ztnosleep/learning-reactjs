@@ -1,8 +1,8 @@
-import { useState } from 'react'
 
 import './App.css'
 import RecipeOfTheDay from '../components/RecipeOfTheDay'
 import RecipesSection from '../components/RecipesSections'
+import Footer from '../components/Footer'
 
 function App() {
   
@@ -11,6 +11,7 @@ function App() {
     <>
       <RecipeOfTheDay/>
       <RecipesSection/>
+      <Footer/>
     </>
   )
 }
