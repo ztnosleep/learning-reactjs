@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import CustomDatatable from './CustomDatatable';
 
 const Content = ({ className }) => {
   const [data, setData] = useState([]);
@@ -57,10 +58,12 @@ const Content = ({ className }) => {
               </span>
               <span className="text-gray-400 text-xs ml-1">{item.change?.period}</span>
             </div>
+            
           </div>
+          
         ))}
       </div>
-     
+      <CustomDatatable/>
     </div>
 
   );
