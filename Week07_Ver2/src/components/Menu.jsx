@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 
 const Menu = () => {
   return (
-    <div className="w-52 bg-white-200 p-5 h-screen">
+    <div className="w-52 bg-white p-5 h-screen">
       {/* Logo */}
       <div className="font-bold text-xl mb-6">
         <img src="./image/logo.png" alt="Logo" className="" />
