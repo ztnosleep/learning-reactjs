@@ -1,30 +1,37 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 const CustomDatatable = () => {
-  // Dữ liệu tĩnh hard-coded
-  const customers = [
-    {
-      customer: "John Doe",
-      company: "ABC Corp",
-      orderValue: "5000",
-      orderDate: "2023-10-01",
-      status: "New",
-    },
-    {
-      customer: "Jane Smith",
-      company: "XYZ Inc",
-      orderValue: "7500",
-      orderDate: "2023-11-15",
-      status: "In-progress",
-    },
-    {
-      customer: "Mike Johnson",
-      company: "Tech Ltd",
-      orderValue: "3000",
-      orderDate: "2023-12-20",
-      status: "Completed",
-    },
-  ];
+  const [customers, setCustomers] = useState([]);
+
+  const generateRandomData = () => {
+    const statuses = ["New", "In-progress", "Completed"];
+    const orderValue = Math.floor(Math.random() * 10000) + 1000; 
+    const randomDate = new Date(
+      Date.now() - Math.floor(Math.random() * 10000000000)
+    ).toISOString().split('T')[0];
+    const status = statuses[Math.floor(Math.random() * statuses.length)]; 
+    return { orderValue, orderDate: randomDate, status };
+  };
+
+  useEffect(() => {
+    fetch('https://jsonplaceholder.typicode.com/users')
+      .then((res) => res.json())
+      .then((data) => {
+ 
+        const mappedData = data.map((user) => {
+          const { orderValue, orderDate, status } = generateRandomData();
+          return {
+            customer: user.name,
+            company: user.company.name,
+            orderValue: orderValue.toString(),
+            orderDate,
+            status,
+          };
+        });
+        setCustomers(mappedData);
+      })
+      .catch((err) => console.error('Error fetching data:', err));
+  }, []);
 
   return (
     <div className="mt-8">
